@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मजून असर-ए-खास - एनर्जी, स्ट्रेंथ और स्टेमिना के लिए</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --secondary: #ff9800;
+            --light: #f1f8e9;
+            --dark: #1b5e20;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 0;
+        }
+        
+        .trust-badge {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .trust-badge:hover {
+            transform: translateY(-5px);
+        }
+        
+        .cta-button {
+            font-size: 1.2rem;
+            padding: 12px 30px;
+            animation: pulse 2s infinite;
+            background-color: var(--secondary);
+            border: none;
+            font-weight: 600;
+        }
+        
+        .cta-button:hover {
+            background-color: #f57c00;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .product-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: none;
+        }
+        
+        .product-card:hover {
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+            transform: translateY(-10px);
+        }
+        
+        .benefit-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: var(--dark);
+            font-weight: 700;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--secondary);
+            border-radius: 2px;
+        }
+        
+        .testimonial-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 0.25rem rgba(46, 125, 50, 0.25);
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 1.5s infinite;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            color: white;
+        }
+        
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+            background-color: var(--primary);
+        }
+        
+        .nav-pills .nav-link {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .timer-box {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            color: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .guarantee-badge {
+            background-color: var(--light);
+            border-left: 4px solid var(--secondary);
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/918273896083" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold" href="#">
+                <i class="fas fa-spa me-2"></i>आयुष्वर्धन
+            </a>
+            <div class="ms-auto d-flex">
+                <a href="tel:+918273896083" class="btn btn-light ms-3">
+                    <i class="fas fa-phone me-2"></i>कॉल करें
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h1 class="display-4 fw-bold mb-3">मजून असर-ए-खास</h1>
+                    <p class="lead fs-3 mb-4">एनर्जी, स्ट्रेंथ और स्टेमिना के लिए शुद्ध आयुर्वेदिक फॉर्मूला</p>
+                    
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-md-8">
+                            <div class="timer-box mb-4">
+                                <i class="fas fa-clock me-2"></i>विशेष ऑफर समाप्त हो रहा है: <span id="countdown">24:00:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="card shadow-lg product-card">
+                                <div class="card-body p-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6 mb-4 mb-md-0">
+                                            <div class="bg-light p-4 rounded text-center">
+                                                <img src="https://via.placeholder.com/300x300/f1f8e9/2e7d32?text=MAJOONE+ASAR-E-KHASS" alt="मजून असर-ए-खास" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 text-start">
+                                            <h3 class="text-success fw-bold">विशेष ऑफर!</h3>
+                                            
+                                            <div class="d-flex align-items-center mb-3">
+                                                <h2 class="fw-bold mb-0">₹1,299</h2>
+                                                <small class="text-danger text-decoration-line-through ms-3">₹1,999</small>
+                                                <span class="badge bg-danger ms-3">35% OFF</span>
+                                            </div>
+                                            
+                                            <p class="text-muted mb-4">सीमित समय की पेशकश - स्टॉक सीमित</p>
+                                            
+                                            <ul class="list-unstyled mb-4">
+                                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> 100% प्राकृतिक सामग्री</li>
+                                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> कोई साइड इफेक्ट नहीं</li>
+                                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> 7-दिन मनी बैक गारंटी</li>
+                                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> डॉक्टर-रिकमेंडेड फॉर्मूला</li>
+                                            </ul>
+                                            
+                                            <a href="#order" class="btn btn-success btn-lg cta-button w-100">
+                                                <i class="fas fa-shopping-cart me-2"></i>अभी ऑर्डर करें
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="trust-badge">
+                        <i class="fas fa-shield-alt text-success fs-1 mb-3"></i>
+                        <h4>गुणवत्ता की गारंटी</h4>
+                        <p>GMP प्रमाणित उत्पादन</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="trust-badge">
+                        <i class="fas fa-truck text-success fs-1 mb-3"></i>
+                        <h4>शीघ्र डिलीवरी</h4>
+                        <p>2-3 कार्य दिवसों में</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="trust-badge">
+                        <i class="fas fa-headset text-success fs-1 mb-3"></i>
+                        <h4>24x7 समर्थन</h4>
+                        <p>आयुर्वेद विशेषज्ञ</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="trust-badge">
+                        <i class="fas fa-certificate text-success fs-1 mb-3"></i>
+                        <h4>प्रामाणिक</h4>
+                        <p>100% शुद्ध आयुर्वेदिक</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Benefits -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">मजून असर-ए-खास के लाभ</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="benefit-card">
+                        <div class="d-flex">
+                            <div class="me-4 text-success">
+                                <i class="fas fa-bolt fs-1"></i>
+                            </div>
+                            <div>
+                                <h4>ऊर्जा बढ़ाएं</h4>
+                                <p>प्राकृतिक तत्वों से बना यह फॉर्मूला आपकी दैनिक ऊर्जा के स्तर में उल्लेखनीय वृद्धि करता है।</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="benefit-card">
+                        <div class="d-flex">
+                            <div class="me-4 text-success">
+                                <i class="fas fa-dumbbell fs-1"></i>
+                            </div>
+                            <div>
+                                <h4>शारीरिक शक्ति</h4>
+                                <p>मांसपेशियों की ताकत और सहनशक्ति में सुधार करता है, आपको अधिक सक्रिय बनाता है।</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="benefit-card">
+                        <div class="d-flex">
+                            <div class="me-4 text-success">
+                                <i class="fas fa-running fs-1"></i>
+                            </div>
+                            <div>
+                                <h4>स्टेमिना बढ़ाएं</h4>
+                                <p>धीरज और सहनशक्ति में सुधार करता है, थकान को कम करता है।</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="benefit-card">
+                        <div class="d-flex">
+                            <div class="me-4 text-success">
+                                <i class="fas fa-heartbeat fs-1"></i>
+                            </div>
+                            <div>
+                                <h4>समग्र स्वास्थ्य</h4>
+                                <p>प्रतिरक्षा प्रणाली को मजबूत करता है और समग्र स्वास्थ्य में सुधार करता है।</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7 Days Challenge -->
+    <section class="py-5 bg-success text-white">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <div class="bg-white text-success rounded-circle d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-calendar-check fa-2x"></i>
+                        </div>
+                        <h2 class="ms-4 mb-0">7 दिनों में परिवर्तन महसूस करें</h2>
+                    </div>
+                    
+                    <p class="lead mb-5">हमारा 7-दिवसीय ट्रायल पैक आपको जोखिम-मुक्त तरीके से परिणाम अनुभव करने का अवसर देता है।</p>
+                    
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-6">
+                            <div class="card h-100 product-card">
+                                <div class="card-header bg-warning text-dark py-3">
+                                    <h4 class="mb-0">7-दिवसीय ट्रायल पैक</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-4">
+                                        <img src="https://via.placeholder.com/200x200/f1f8e9/2e7d32?text=TRIAL+PACK" alt="ट्रायल पैक" class="img-fluid rounded">
+                                    </div>
+                                    <h3 class="text-success fw-bold mb-3">₹499</h3>
+                                    <p class="mb-4">परिणामों को स्वयं अनुभव करने का सबसे अच्छा तरीका</p>
+                                    <a href="#order" class="btn btn-success w-100">अभी खरीदें</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">यह कैसे काम करता है?</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 text-center">
+                    <div class="bg-light p-4 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 120px; height: 120px;">
+                        <i class="fas fa-capsules fa-3x text-success"></i>
+                    </div>
+                    <h4>1. नियमित उपयोग</h4>
+                    <p>दिन में दो बार निर्धारित मात्रा में सेवन करें</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="bg-light p-4 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 120px; height: 120px;">
+                        <i class="fas fa-heart fa-3x text-success"></i>
+                    </div>
+                    <h4>2. प्राकृतिक अवशोषण</h4>
+                    <p>शरीर प्राकृतिक तत्वों को अवशोषित करता है</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="bg-light p-4 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 120px; height: 120px;">
+                        <i class="fas fa-chart-line fa-3x text-success"></i>
+                    </div>
+                    <h4>3. परिणाम अनुभव करें</h4>
+                    <p>7 दिनों में ऊर्जा और स्टेमिना में वृद्धि महसूस करें</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">हमारे ग्राहक क्या कहते हैं</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic">"मैं पिछले 2 महीने से मजून असर-ए-खास का उपयोग कर रहा हूं और ऊर्जा स्तर में उल्लेखनीय अंतर महसूस कर रहा हूं। अब मैं पूरे दिन सक्रिय रहता हूं और थकान महसूस नहीं होती।"</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="ग्राहक" class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h6 class="mb-0">राहुल शर्मा</h6>
+                                    <small class="text-muted">मुंबई</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="fst-italic">"7-दिवसीय ट्रायल पैक के बाद मैंने फुल पैक खरीदा। मेरी स्टेमिना में 40% सुधार हुआ है और मैं जिम में अधिक समय तक वर्कआउट कर पाता हूं। सबसे अच्छी बात है कि कोई साइड इफेक्ट नहीं।"</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="ग्राहक" class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h6 class="mb-0">विकास पाटिल</h6>
+                                    <small class="text-muted">पुणे</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic">"45 की उम्र के बाद मैं खुद को थका हुआ महसूस करने लगा था। मजून असर-ए-खास ने मेरी ऊर्जा वापस लौटा दी है। अब मैं अपने बच्चों के साथ अधिक समय बिता पाता हूं और खुश हूं।"</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="ग्राहक" class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h6 class="mb-0">संजय मेहता</h6>
+                                    <small class="text-muted">दिल्ली</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="py-5" id="order">
+        <div class="container">
+            <h2 class="section-title">अपना ऑर्डर दें</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-4">
+                                <h3 class="fw-bold text-success">मजून असर-ए-खास</h3>
+                                <p>अपना ऑर्डर पूरा करने के लिए नीचे दिए गए फॉर्म को भरें</p>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-full-tab" data-bs-toggle="pill" data-bs-target="#pills-full" type="button" role="tab">
+                                            फुल प्रोडक्ट (₹1,299)
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-trial-tab" data-bs-toggle="pill" data-bs-target="#pills-trial" type="button" role="tab">
+                                            7-दिवसीय ट्रायल (₹499)
+                                        </button>
+                                    </li>
+                                </ul>
+                                
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-full" role="tabpanel">
+                                        <div class="text-center mb-4">
+                                            <img src="https://via.placeholder.com/250x250/f1f8e9/2e7d32?text=MAJOONE+ASAR-E-KHASS" alt="फुल प्रोडक्ट" class="img-fluid rounded mb-3">
+                                            <h4 class="fw-bold">फुल प्रोडक्ट पैक</h4>
+                                            <p class="mb-0">30 दिनों की आपूर्ति - सर्वोत्तम मूल्य</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-trial" role="tabpanel">
+                                        <div class="text-center mb-4">
+                                            <img src="https://via.placeholder.com/250x250/f1f8e9/2e7d32?text=TRIAL+PACK" alt="ट्रायल पैक" class="img-fluid rounded mb-3">
+                                            <h4 class="fw-bold">7-दिवसीय ट्रायल पैक</h4>
+                                            <p class="mb-0">परिणाम अनुभव करने के लिए आदर्श शुरुआत</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <form id="orderForm">
+                                <div class="mb-3">
+                                    <label class="form-label">पूरा नाम</label>
+                                    <input type="text" class="form-control form-control-lg" placeholder="आपका पूरा नाम" required>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">मोबाइल नंबर</label>
+                                    <input type="tel" class="form-control form-control-lg" placeholder="आपका 10-अंकीय मोबाइल नंबर" required>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">ईमेल पता</label>
+                                    <input type="email" class="form-control form-control-lg" placeholder="आपका ईमेल पता" required>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">पूरा पता</label>
+                                    <textarea class="form-control form-control-lg" rows="3" placeholder="पूरा डिलीवरी पता (मकान नंबर, सड़क, शहर, पिन कोड)" required></textarea>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label class="form-label">राज्य</label>
+                                    <select class="form-select form-select-lg" required>
+                                        <option value="" selected disabled>अपना राज्य चुनें</option>
+                                        <option>महाराष्ट्र</option>
+                                        <option>दिल्ली</option>
+                                        <option>उत्तर प्रदेश</option>
+                                        <option>बिहार</option>
+                                        <option>पश्चिम बंगाल</option>
+                                        <option>तमिल नाडु</option>
+                                        <option>कर्नाटक</option>
+                                        <option>गुजरात</option>
+                                        <option>अन्य</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-success btn-lg cta-button">
+                                        <i class="fas fa-lock me-2"></i>सुरक्षित भुगतान करें
+                                    </button>
+                                </div>
+                                
+                                <div class="text-center mt-3">
+                                    <p class="small text-muted">आपका डेटा सुरक्षित है। हम आपकी जानकारी किसी के साथ साझा नहीं करते हैं।</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Offer -->
+    <section class="py-5 bg-warning">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-4">नि:शुल्क आयुर्वेदिक परामर्श</h2>
+                    <p class="lead mb-4">क्या आप अनिश्चित हैं कि यह उत्पाद आपके लिए उपयुक्त है? हमारे आयुर्वेद विशेषज्ञ से निःशुल्क परामर्श लें</p>
+                    <a href="https://wa.me/918273896083" class="btn btn-success btn-lg px-5" target="_blank">
+                        <i class="fab fa-whatsapp me-2"></i>व्हाट्सएप पर चैट करें
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">सामान्य प्रश्न</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            मुझे परिणाम दिखने में कितना समय लगेगा?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            अधिकांश उपयोगकर्ता 7 दिनों के भीतर ऊर्जा और स्टेमिना में सुधार देखना शुरू कर देते हैं। इष्टतम परिणामों के लिए निरंतर उपयोग की सिफारिश की जाती है।
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            क्या इस उत्पाद के कोई दुष्प्रभाव हैं?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            नहीं, मजून असर-ए-खास 100% प्राकृतिक आयुर्वेदिक सामग्रियों से बनाया गया है और इसका कोई ज्ञात दुष्प्रभाव नहीं है। हालांकि, गर्भवती महिलाओं और पहले से मौजूद चिकित्सीय स्थितियों वाले व्यक्तियों को उपयोग शुरू करने से पहले अपने चिकित्सक से परामर्श करना चाहिए।
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            डिलीवरी में कितना समय लगता है?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            हम भारत भर में 2-3 कार्य दिवसों में डिलीवरी करते हैं। प्रमुख शहरों में, हम अगले दिन की डिलीवरी भी प्रदान करते हैं। आपके ऑर्डर की पुष्टि होने के बाद हम आपको ट्रैकिंग विवरण प्रदान करेंगे।
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            मैं रिफंड कैसे प्राप्त कर सकता हूँ?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            हम 7-दिन की मनी-बैक गारंटी प्रदान करते हैं। यदि आप उत्पाद से संतुष्ट नहीं हैं, तो कृपया हमें कॉल या व्हाट्सएप करें और हम पूरी राशि वापस कर देंगे। शर्तें लागू होती हैं।
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-5 bg-success text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">अपना मजून असर-ए-खास अभी प्राप्त करें</h2>
+            <p class="lead mb-5">सीमित स्टॉक - अभी ऑर्डर करें और अपनी ऊर्जा, ताकत और स्टेमिना में वृद्धि का अनुभव करें</p>
+            <a href="#order" class="btn btn-light btn-lg cta-button">
+                <i class="fas fa-shopping-cart me-2"></i>अभी ऑर्डर करें
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="fw-bold mb-4"><i class="fas fa-spa me-2"></i>आयुष्वर्धन</h4>
+                    <p>शुद्ध आयुर्वेदिक उत्पादों के माध्यम से प्राकृतिक स्वास्थ्य और कल्याण को बढ़ावा देना।</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="fw-bold mb-4">जल्दी लिंक</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">होम</a></li>
+                        <li class="mb-2"><a href="#order" class="text-white text-decoration-none">उत्पाद</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">आयुर्वेद के बारे में</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">संपर्क करें</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="fw-bold mb-4">संपर्क करें</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +91 8273896083</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> support@ayushvardhan.com</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> मुंबई, महाराष्ट्र</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">© 2023 आयुष्वर्धन. सर्वाधिकार सुरक्षित</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Countdown Timer
+        const countdownDate = new Date();
+        countdownDate.setDate(countdownDate.getDate() + 2);
+        
+        const countdown = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+            
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById("countdown").innerHTML = 
+                `${Math.floor(hours)}h ${minutes}m ${seconds}s`;
+                
+            if (distance < 0) {
+                clearInterval(countdown);
+                document.getElementById("countdown").innerHTML = "OFFER EXPIRED";
+            }
+        }, 1000);
+        
+        // Form submission to Razorpay
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Validate form
+            const name = document.querySelector('input[type="text"]').value;
+            const phone = document.querySelector('input[type="tel"]').value;
+            const address = document.querySelector('textarea').value;
+            
+            if(!name || !phone || !address) {
+                alert('कृपया सभी आवश्यक फ़ील्ड भरें');
+                return;
+            }
+            
+            // Redirect to Razorpay payment link
+            window.location.href = 'https://rzp.io/rzp/6iSAna5';
+        });
+        
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
